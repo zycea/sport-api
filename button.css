@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,600&family=Merriweather+Sans:wght@800&family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+
+}
+.sec {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+
+.container{
+    background-color: #091c3e;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container button{
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    margin: 0 25px 0 0;
+    font-size: 30px;
+    border: none;
+}
+.container button:hover{
+    background-color: #cdfb0a;
+    color:#091c3e ;
+    border-radius: 50px;
+}
+
+
+
+#basket, #football {
+    display: none;
+    
+}
+
+
+
+
+.baskdis , .footdis,.baseball{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+/*---basket*/
+#basket .baskdis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #091c3e;
+   
+
+}
+#basket button{
+    background-color: transparent;
+    color: whitesmoke;
+    padding: 10px;
+    margin-right: 25px;
+    font-size: 25px;
+    border: none;
+
+}
+#basket button:hover{
+    background-color: #cdfb0a;
+    color:#091c3e ;
+    border-radius: 50px;
+}
+.baskdis{
+   
+}
+#demoba{
+    display: grid;
+    width: 100%;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto
+}
+.dated{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    align-items: start;
+    margin: 20px;
+    height: 100%;
+    background-color: #091c3e;
+    color: #fff;
+}
+.part h3{
+    text-align: center;
+}
+.part p{
+    padding: auto 2px;
+}
+#datee{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#groupS{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    
+}
+#groupS img{
+    width: 40px;
+}
+#datee .top{
+    display: flex;
+    background-color: #091c3e;
+    color: #fff;
+}
+#datee .top p{
+    margin: 15px;
+}
+#datee .bot{
+    display: flex;
+    background-color: #cdfb0a;
+    justify-content: center;
+    
+}
+#datee .bot p{
+    margin: 15px;
+    color: #091c3e;
+   
+}
+/*fooot*/
+
+
+#football .footdis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #091c3e;
+    height: 50px;
+
+}
+#football button{
+    background-color: transparent;
+    color: whitesmoke;
+    padding: 10px;
+    margin-right: 25px;
+    font-size: 25px;
+    border: none;
+
+}
+#football button:hover{
+    background-color: #cdfb0a;
+    color:#091c3e ;
+    border-radius: 50px;
+}
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.scrotop{
+    display: flex;
+    
+    overflow-y: scroll;
+    width: 1000px;
+    height: 400px;
+    float: left;
+    background-color: #091c3e;
+    color: #fff;
+    
+}
+.jouertop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    margin: 0 10px 0 0;
+   border:  1px solid #fff;
+   padding: 5px;
+}
+.jouertop p:hover{
+    background-color: #cdfb0a;
+    color: #fff;
+}
+.footcl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footcl table{
+    text-align: center;
+}
+.imgf{
+    display: flex;
+    align-items: center;
+    
+}
+.stand img{
+    width: 40px;
+}
+/*table*/
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+  }
+th{
+    background-color: #091c3e;
+    color: #fff;
+    padding: 10px;
+   
+}
+td {
+    padding: 10px;
+    border: 1px solid #dddddd;
+}
+tr:hover{
+    background-color: #091c3e;
+    color: #cdfb0a;
+}
+
+/*---scorefoot*/
+#calen .top{
+    display: flex;
+    background-color: #091c3e;
+    color: #fff;
+}
+#calen .top p{
+    margin: 15px;
+}
+
+#calen .bot{
+    display: flex;
+    background-color: #cdfb0a;
+    justify-content: center;
+    
+}
+#calen .bot p{
+    margin: 15px;
+    color: #091c3e;
+   
+}

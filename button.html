@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./button.css">
+</head>
+<script>
+   
+    window.onload = function () {
+        toggleSections();
+    };
+    
+</script>
+<body>
+    <div class="container">
+        <button onclick="toggleSections('basket')">basketball</button>
+        <button onclick="toggleSections('football')">football</button>
+    </div>
+
+    <div class="basket sec" id="basket">
+        <div class="baskdis">
+            <button type="button" class="league" value="12" onclick="updFe(this.value)" >nba</button>
+            <button type="button" class="league" value="2" onclick="updFe(this.value)">nbl</button>
+            <button type="button" class="league" value="78" onclick="updFe(this.value)">ligua</button>
+        </div>
+        <div class="option">
+        <div class="dated">
+            <label for="datepicker">Choose a date:</label>
+            <input type="date" name="date" id="date" pattern="\d{4}-\d{2}-\d{2}" onchange="calen(leaguevalue, this.value)">
+    
+        </div>
+        <div class="content">
+            <div id="groupS">
+        
+            </div>
+            <div id="datee"></div>
+        </div>
+       </div>
+    </div>
+
+    
+    <div class="football sec" id="football">
+        <div class="footdis">
+            <button type="button" class="league" value="61" onclick="updateAndFetch(this.value)" >ligue 1</button>
+            <button type="button" class="league" value="39" onclick="updateAndFetch(this.value)">premier league</button>
+            <button type="button" class="league" value="135" onclick="updateAndFetch(this.value)">ligua</button>
+        </div>
+       
+          <div class="content" >
+            <div class="scory">
+                <div class="footcl" >
+                    <table id="tablefoo" class="stand">
+                        <thead>
+                            <tr>
+                                <th>POSITION</th>
+                                <th>CLUB</th>
+                                <th>POINTS</th>
+                                <th>JOUÉS</th>
+                                <th>GAGNÉS</th>
+                                <th>NULS</th>
+                                <th>PERDUS</th>
+                            
+                                
+                            </tr>
+                            <tbody id="demofoo">
+                
+                            </tbody>
+                        </thead>
+                    
+                    </table>
+                </div>
+                
+            
+            </div>
+            <div class="scrotop" id="top"></div>
+            <div id="calen"></div>
+            </div>
+    </div>
+  
+    
+    <script src="./button.js"></script>
+</body>
+</html>
